@@ -9,7 +9,7 @@ module ResponsivePreview
       status, headers, response = @app.call(env)
       action_controller = env['action_controller.instance']
 
-      if action_controller.wants_responsive_preview?
+      if action_controller&.wants_responsive_preview?
         action_view = action_controller.class.helpers.tap do |context|
           context.controller = action_controller
         end
