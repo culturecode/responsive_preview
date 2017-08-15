@@ -14,7 +14,7 @@ module ResponsivePreview
           context.controller = action_controller
         end
 
-        body = action_view.render(html: response.body, layout: "/app/views/layouts/responsive_preview").to_s
+        body = action_view.render(html: Array(response.body).join, layout: "/app/views/layouts/responsive_preview").to_s
         headers["Content-Length"] = body.length.to_s
         response = [body]
       end
