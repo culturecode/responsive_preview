@@ -22,6 +22,6 @@ Provide a responsive preview layout
 <!-- app/views/layouts/responsive_preview.html.erb -->
 
 <!-- Add some other chrome for switching devices/iframe dimensions -->
-<iframe><%= yield %></iframe>
+<%= content_tag :iframe, '', srcdoc: yield %>
 <%= responsive_preview_js %>
 ```
