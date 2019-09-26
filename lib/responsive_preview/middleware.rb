@@ -11,7 +11,7 @@ module ResponsivePreview
 
       if action_controller&.wants_responsive_preview?
         original_response = Array(response.body).join
-        body = action_controller.render_to_string(html: original_response, layout: "/app/views/layouts/responsive_preview")
+        body = action_controller.render_to_string(html: original_response, layout: "responsive_preview")
         headers["Content-Length"] = body.bytesize.to_s
         response = [body]
       end
