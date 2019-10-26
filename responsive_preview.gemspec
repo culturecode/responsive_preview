@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.name        = "responsive_preview"
   s.version     = ResponsivePreview::VERSION
   s.authors     = ["Ryan Wallace", "Nicholas Jakobsen"]
-  s.email       = ["contact@culturecode.ca"]
-  s.homepage    = "http://github.com/culturecode/responsive_preview"
+  s.email       = ["hello@combinaut.com"]
+  s.homepage    = "http://github.com/combinaut/responsive_preview"
   s.summary     = "Rack Middleware that injects an iframe around the response content to allow for responsive previewing"
   s.description = "Rack Middleware that injects an iframe around the response content to allow for responsive previewing"
 
