@@ -5,7 +5,6 @@ module ResponsivePreview
     end
 
     def call(env)
-      request = Rack::Request.new(env)
       status, headers, body = @app.call(env)
       action_controller = env['action_controller.instance']
 
